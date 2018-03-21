@@ -3,7 +3,7 @@ Boat Mania is a ferry game, where you have to draw your boat through all the obs
 
 ## Instruction
 1. Sudo apt install libglew-dev libglfw3-dev libglm-dev cmake pkg-config
-2. Extract the game and go to ‘Boat Mania’ folder.
+2. Extract the game and go to the folder.
 3. Run the command ‘mkdir build’
 4. Run the command ‘cd build’
 5. Run the command ‘cmake ..’
