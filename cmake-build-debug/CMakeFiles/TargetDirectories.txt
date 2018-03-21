@@ -1,0 +1,3 @@
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/cmake-build-debug/CMakeFiles/graphics_asgn1.dir

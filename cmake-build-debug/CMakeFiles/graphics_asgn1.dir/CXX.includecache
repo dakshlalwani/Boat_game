@@ -1,0 +1,228 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/audio.cpp
+ao/ao.h
+-
+mpg123.h
+-
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/ball.cpp
+ball.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/ball.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/ball.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/boat.cpp
+boat.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/boat.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+ball.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/ball.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/boat.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/color.cpp
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/cube.cpp
+cube.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/cube.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/cube.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/cuboid.cpp
+cuboid.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/cuboid.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/cuboid.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/input.cpp
+iostream
+-
+cmath
+-
+fstream
+-
+vector
+-
+GL/glew.h
+-
+GLFW/glfw3.h
+-
+glm/glm.hpp
+-
+glm/gtx/transform.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/island.cpp
+island.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/island.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/island.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.cpp
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+timer.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/timer.h
+ball.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/ball.h
+water.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/water.h
+boat.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/boat.h
+objcircle.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/objcircle.h
+nitro.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/nitro.h
+plain.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/plain.h
+cuboid.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/cuboid.h
+island.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/island.h
+cube.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/cube.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+iostream
+-
+cmath
+-
+fstream
+-
+vector
+-
+GL/glew.h
+-
+GLFW/glfw3.h
+-
+glm/glm.hpp
+-
+glm/gtx/transform.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/nitro.cpp
+nitro.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/nitro.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/nitro.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/nonedit.cpp
+iostream
+-
+cmath
+-
+fstream
+-
+vector
+-
+GL/glew.h
+-
+GLFW/glfw3.h
+-
+glm/glm.hpp
+-
+glm/gtx/transform.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/objcircle.cpp
+objcircle.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/objcircle.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/objcircle.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/other_handlers.cpp
+iostream
+-
+cmath
+-
+fstream
+-
+vector
+-
+GL/glew.h
+-
+GLFW/glfw3.h
+-
+glm/glm.hpp
+-
+glm/gtx/transform.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/plain.cpp
+plain.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/plain.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/plain.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/timer.cpp
+timer.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/timer.h
+GLFW/glfw3.h
+-
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/timer.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/water.cpp
+water.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/water.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/water.h
+main.h
+/home/daksh/Sem 4/Graphics/assignments/Boat Mania/src/main.h
+

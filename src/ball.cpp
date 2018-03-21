@@ -1,0 +1,124 @@
+#include "ball.h"
+#include "main.h"
+
+Ball::Ball(float x, float y, float z, color_t color, float width) {
+    this->position = glm::vec3(x, y, z);
+    this->rotation = 0;
+    this->xsp = 0.3;
+    this->ysp = 1;
+    this->zsp = 1;
+    this->xaccn = 0.013;
+    this->sunacc=0;
+    this->sunx=0;
+    this->suny=0;
+    this->sunz=0;
+    this->suncount=0;
+//    speed = 1;
+    // Our vertices. Three consecutive floats give a 3D vertex; Three consecutive vertices give a triangle.
+    // A cube has 6 faces with 2 triangles each, so this makes 6*2=12 triangles, and 12*3 vertices
+    static const GLfloat vertex_buffer_data[] = {
+        0,-width,-width, // triangle 1 : begin
+        0,-width, width,
+        0, width, width, // triangle 1 : end
+        width*2, width,-width, // triangle 2 : begin
+        0,-width,-width,
+        0, width,-width, // triangle 2 : end
+        width*2,-width, width,
+        0,-width,-width,
+        width*2,-width,-width,
+        width*2, width,-width,
+        width*2,-width,-width,
+        0,-width,-width,
+        0,-width,-width,
+        0, width, width,
+        0, width,-width,
+        width*2,-width, width,
+        0,-width, width,
+        0,-width,-width,
+        0, width, width,
+        0,-width, width,
+        width*2,-width, width,
+        width*2, width, width,
+        width*2,-width,-width,
+        width*2, width,-width,
+        width*2,-width,-width,
+        width*2, width, width,
+        width*2,-width, width,
+        width*2, width, width,
+        width*2, width,-width,
+        0, width,-width,
+        width*2, width, width,
+        0, width,-width,
+        0, width, width,
+        width*2, width, width,
+        0, width, width,
+        width*2,-width, width
+    };
+
+    this->object = create3DObject(GL_TRIANGLES, 12*3, vertex_buffer_data, color, GL_FILL);
+}
+
+void Ball::draw(glm::mat4 VP) {
+    for (this->rotation = 0; this->rotation < 360; ++this->rotation) {
+        Matrices.model = glm::mat4(1.0f);
+        glm::mat4 translate = glm::translate (this->position);    // glTranslatef
+        glm::mat4 rotate    = glm::rotate((float) (this->rotation * M_PI / 180.0f), glm::vec3(1, 0, 0));
+        // No need as coords centered at 0, 0, 0 of cube arouund which we waant to rotate
+        // rotate          = rotate * glm::translate(glm::vec3(0, -0.6, 0));
+        Matrices.model *= (translate * rotate);
+        glm::mat4 MVP = VP * Matrices.model;
+        glUniformMatrix4fv(Matrices.MatrixID, 1, GL_FALSE, &MVP[0][0]);
+        draw3DObject(this->object);
+    }
+    for (this->rotation = 0; this->rotation < 360; ++this->rotation) {
+        Matrices.model = glm::mat4(1.0f);
+        glm::mat4 translate = glm::translate (this->position);    // glTranslatef
+        glm::mat4 rotate    = glm::rotate((float) (this->rotation * M_PI / 180.0f), glm::vec3(0, 1, 0));
+        // No need as coords centered at 0, 0, 0 of cube arouund which we waant to rotate
+        // rotate          = rotate * glm::translate(glm::vec3(0, -0.6, 0));
+        Matrices.model *= (translate * rotate);
+        glm::mat4 MVP = VP * Matrices.model;
+        glUniformMatrix4fv(Matrices.MatrixID, 1, GL_FALSE, &MVP[0][0]);
+        draw3DObject(this->object);
+    }
+    for (this->rotation = 0; this->rotation < 360; ++this->rotation) {
+        Matrices.model = glm::mat4(1.0f);
+        glm::mat4 translate = glm::translate (this->position);    // glTranslatef
+        glm::mat4 rotate    = glm::rotate((float) (this->rotation * M_PI / 180.0f), glm::vec3(0, 0, 1));
+        // No need as coords centered at 0, 0, 0 of cube arouund which we waant to rotate
+        // rotate          = rotate * glm::translate(glm::vec3(0, -0.6, 0));
+        Matrices.model *= (translate * rotate);
+        glm::mat4 MVP = VP * Matrices.model;
+        glUniformMatrix4fv(Matrices.MatrixID, 1, GL_FALSE, &MVP[0][0]);
+        draw3DObject(this->object);
+    }
+}
+
+void Ball::set_position(float x, float y, float z) {
+    this->position = glm::vec3(x, y, z);
+}
+
+void Ball::tick() {
+//    this->rotation += 20;
+//    printf("%d      ppppppppp\n",this->suncount);
+    if (this->suncount) {
+        printf("yesssssssssssss\n");
+        this->sunx -= this->sunacc;
+        this->position.x += this->sunx;
+        this->position.y -= suny;
+        this->position.z += sunz;
+        if(this->position.x<=1) {
+            this->position.x = 1;
+            this->sunx = 0;
+            this->sunacc=0;
+//            this->suncount=0;
+        }
+        this->suny=0;
+        this->sunz=0;
+    }
+    if (this->position.x<1) {
+        this->suny=0;
+        this->sunz=0;
+    }
+}
+

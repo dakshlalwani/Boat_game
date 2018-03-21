@@ -1,0 +1,4 @@
+/home/daksh/Programs/clion-2017.3.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/daksh/Sem 4/Graphics/assignments/Boat Mania"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/daksh/Sem 4/Graphics/assignments/Boat Mania/cmake-build-debug
